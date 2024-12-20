@@ -15,6 +15,7 @@ const NewChat = () => {
   const [chat, setChat] = useState(defaultChat);
   const [question, setQuestion] = useState("");
   const submitQuestion = () => {
+    if (!question) return;
     let response = sampleData.find((d) => d.question === question)?.response;
     if (!response)
       response =
