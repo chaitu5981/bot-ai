@@ -29,7 +29,7 @@ const ChatWindow = ({ chat, setChat }) => {
         <div className="ml-20">
           <p>Rate this Response</p>
           <Rating
-            className="!w-[10%]"
+            className="!w-[7rem]"
             value={chat.rating}
             onChange={(val) => setChat({ ...chat, rating: val })}
           />
